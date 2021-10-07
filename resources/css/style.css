@@ -1,0 +1,113 @@
+/* Universal Styles */
+html {
+    font-family: 'Montserrat', Times, serif;
+    font-size: 16px;
+    background-color: white;
+    color: #1a1b1f;
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+}
+
+/* Accent Colors:
+Primary: #86c232, primary-light: #b9f565, primary-dark: #549100
+Secondary: #474b4f, secondary-light: #72777b, secondary-dark: #202327
+Text on P: #000000, Text on S: #ffffff
+ */
+
+/* Body variables */
+body {
+    --primary-text-color: #000;
+    --secondary-text-color: #fff;
+    --bkg-color: white;
+}
+
+body.dark-theme {
+    --primary-text-color: #000;
+    --secondary-text-color: #fff;
+    --bkg-color: #121212;
+}
+
+body {
+    background-color: var(--bkg-color);
+    font-family: 'Montserrat', Times, serif;
+    color: var(--primary-text-color);
+    margin: 0;
+    padding: 0;
+}
+
+/* Header */
+header {
+    width: 100%;
+    z-index: 10;
+    border: 2px green solid;
+    border-radius: 5px;
+}
+
+header .content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header nav ul {
+    display: flex;
+    list-style: none;
+}
+
+header a:hover {
+    color: #4b4c52;
+}
+
+header nav li {
+    padding: 1.25rem 0.625rem;
+}
+
+/* Main */
+.main-content {
+    border: 2px blue solid;
+    /* position: relative;
+    top: 8rem; */
+}
+
+/* About Me section */
+#aboutme {
+    border: 2px dodgerblue solid;
+    border-radius: 5px;
+    display: block;
+
+    background-color: rgb(220, 220, 220);
+    box-shadow: 2px 2px 50px rgba(0, 0, 0, 0.2);
+}
+
+#skills {
+    border: 2px dodgerblue solid;
+    border-radius: 5px;
+}
+
+/* Coursework section */
+#construction,
+#major-courses,
+#minor-courses {
+    background-color: beige;
+    color: black;
+    border-radius: 5px;
+    border: 2px dodgerblue solid;
+}
+
+.courses-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.courses-container .course {
+    border-radius: 5px;
+    border: 2px blueviolet solid;
+    
+}
+
+/* Footer */
+footer {
+    border: 2px green solid;
+    border-radius: 5px;
+}
